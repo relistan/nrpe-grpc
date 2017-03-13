@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.nrpe";
+option java_outer_classname = "NrpeProto";
+
+package nrperpc;
+
+// The check service definition
+service Check {
+  // Sends a greeting
+  rpc NrpeCheck (NrpeRequest) returns (NrpeReply) {}
+}
+
+// The requested NRPE check
+message NrpeRequest {
+  string name = 1;
+}
+
+// The response message containing the status
+message NrpeReply {
+  int32 StatusCode = 1;
+  string StatusLine = 2;
+}
