@@ -1,0 +1,1 @@
+protoc -I nrperpc/ --go_out=plugins=grpc:nrperpc nrperpc/nrperpc.proto

@@ -5,7 +5,7 @@ import (
 	"net"
 
 	"github.com/envimate/nrpe"
-	"github.com/relistan/nrpe-test/nrperpc"
+	"github.com/relistan/nrpe-grpc/nrperpc"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"

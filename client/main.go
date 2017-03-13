@@ -6,7 +6,7 @@ import (
 
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
-	"github.com/relistan/nrpe-test/nrperpc"
+	"github.com/relistan/nrpe-grpc/nrperpc"
 )
 
 const (
